@@ -8,5 +8,9 @@ def display_Topic(request):
     return render(request,'display_Topic.html',d)
 def display_Webpage(request):
     LOW=Webpage.objects.all()
-    d={'topics':LOW}
+    d={'webpages':LOW}
     return render(request,'display_Webpage.html',d)
+def Access(request):
+    LOA=AccessRecord.objects.all()
+    d={'access':LOA}
+    return render(request,'access.html',d)

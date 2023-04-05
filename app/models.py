@@ -12,3 +12,9 @@ class Webpage(models.Model):
     mail=models.EmailField(default='cricketgmail.com')
     def __str__(self):
         return self.name
+class AccessRecord(models.Model):
+    name=models.ForeignKey(Webpage,on_delete=models.CASCADE)
+    author=models.CharField(max_length=100)
+    date=models.DateField()
+    def __str__(self):
+        return self.author 
