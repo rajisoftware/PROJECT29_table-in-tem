@@ -21,5 +21,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("display_Topic/",display_Topic,name='display_Topic'),
     path('display_Webpage/',display_Webpage,name='display_Webpage'),
-    path('access/',access,name='access'),
+    path('Access/',Access,name='Access'),
 ]

@@ -13,4 +13,4 @@ def display_Webpage(request):
 def Access(request):
     LOA=AccessRecord.objects.all()
     d={'access':LOA}
-    return render(request,'access.html',d)
+    return render(request,'Access.html',d)
